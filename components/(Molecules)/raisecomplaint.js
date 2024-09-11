@@ -283,10 +283,19 @@ import { Button } from '../ui/button';
 
 type Props = {};
 
+<<<<<<< HEAD:components/(Molecules)/raisecomplaint.tsx
 export default function RaiseComplaint({ }: Props) {
     return (
         <div>
             <p className='text-lg font-bold flex justify-center text-rose-600 mt-[2rem]'>Raise a Complaint</p>
+=======
+//         </div>
+//     );
+// };
+
+'use client'
+import React, { useState } from 'react';
+>>>>>>> d19a827a5007460a0579511312bbe8203e49ea9d:components/(Molecules)/raisecomplaint.js
 
             {/* Form component wrapping input and button */}
             <Form>
