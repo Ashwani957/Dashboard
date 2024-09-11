@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
+import { InputOTPControlled } from '../(Atoms)/inputotp';
 
 type Props = {};
 
@@ -26,7 +27,8 @@ export function Track({ }: Props) {
       <div className="space-y-3 mt-[-6.25rem]">
         <p className="text-black font-bold">Validate OTP</p>
         <div className="flex items-center space-x-2">
-        <Input type="text" placeholder="******" className="w-40 h-8 text-black" />
+        {/* <Input type="text" placeholder="******" className="w-40 h-8 text-black" /> */}
+        <InputOTPControlled/>
           <Button className="text-rose-900 font-semibold h-8 px-2 bg-slate-400" variant="secondary">
             Submit
           </Button>
