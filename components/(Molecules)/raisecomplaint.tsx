@@ -2,6 +2,7 @@
 import React from 'react';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
+import { DatePickerDemo } from '../(Atoms)/datepicker';
 
 type Props = {};
 
@@ -65,6 +66,7 @@ export default function RaiseComplaint({ }: Props) {
             <div className="space-y-1">
                 <p className="text-black font-bold">Incident Date</p>
                 <Input type="date" className="w-32 h-8" />
+                
             </div>
 
             {/* Description Section */}

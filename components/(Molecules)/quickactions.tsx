@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button } from '../ui/button';
-import { transferableAbortController } from 'util';
+import  ComboboxDemo  from '../(Atoms)/combobox';
+import TabDemo from '../(Atoms)/tabsdemo';
+import Navbar from './navbar';
 
 
 type Props = {};
@@ -12,22 +14,21 @@ export function QuickActions({ }: Props) {
           <div className='text-lg font-bold text-center text-black'>
            Quick Actions
           </div>
-    
-          {/* Description Section */}
-          <div className="space-y-1">
-            <p className="text-black font-bold">Description</p>
-            <textarea className="w-full h-[14rem] p-2 border-2" placeholder="Enter your description here" />
+          <section className='flex justify-center justify-items-start'>
+            <ComboboxDemo/>
+          </section>
+          <div className='flex justify-center items-center '>
+          <TabDemo />
           </div>
-    
-          {/* Footer buttons */}
-          <div className="flex justify-end space-x-2">
-            <Button className="text-rose-900 font-semibold h-8 px-4 bg-slate-400" variant="secondary">
-              Cancel
-            </Button>
-            <Button className="text-rose-900 font-semibold h-8 px-4 bg-slate-400" variant="secondary">
-              Submit
-            </Button>
+          <div className='w-[23rem] h-20 bg-rose-900 rounded-md flex justify-center items-center'>
+            <p className='text-white font-semibold p-2'>FeedBack</p>
+            <p className='text-rose-200 font-semibold p-2 flex justify-center text-xs mb-2 items-center'>Give us feedback. Your valuable Feedback. Help us to continuously Improve our system. </p>
           </div>
+          <div className='mb-8'>
+            <Navbar/>
+          </div>
+         
+
         </div>
       );
     }
