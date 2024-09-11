@@ -2,7 +2,7 @@
 import React from 'react';
 import { Mic } from 'lucide-react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
- import {useEffect} from 'react'
+import {useEffect} from 'react'
 
 
 type Props = {};
@@ -33,7 +33,7 @@ type Props = {};
 
    
     <div className="relative w-full h-full flex justify-center items-center"> {/* Wrapper to handle absolute positioning */}
-      <div className="absolute bottom-[-20px] flex justify-center mb-[-29.5rem]">
+      <div className="absolute bottom-[12px] flex justify-center mb-[-29.5rem]">
          
         <button className="flex items-center justify-center p-4 bg-[#75002B] rounded-full shadow-2xl text-[#FFFF] z-10  hover:scale-110 transition-transform duration-200 ease-in-out   hover:bg-[#75002B] hover:shadow-lg"
         onClick={SpeechRecognition.startListening}>
