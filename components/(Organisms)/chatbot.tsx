@@ -13,31 +13,64 @@ import { Track } from '../(Molecules)/trackrequest';
 import { Feedback } from '../(Molecules)/feedback';
 import { QuickActions } from '../(Molecules)/quickactions';
 
+import  Railmadaheader from '../(Molecules)/railmadaheader'
+
 type Props = {};
 
 export  default function ChatBot({ }: Props) {
-    return (
-        <div className=' relative flex items-center justify-center min-h-screen bg-gray-900'>
+    // return (
+    //     <div className=' relative flex   items-center justify-center min-h-screen bg-gray-900 flex-wrap'>
             
-            <div >
-                <Background />
-                {/* Chat content goes here */}
-                <div className="flex justify-center mt-[-36rem]">
-                    <Microphone />
-                </div>
-                <Navbar></Navbar>   
-             
+    //         {/* first page */}
+    //         <div >
+    //             <Background />
 
-            </div>
-            {/*
-           <Raisecomplaint/>
-            <Feedback/> 
-            */}  
-            <Track/>
-            <QuickActions/>
-        </div>
+    //             {/* Chat content goes here */}
+    //             <div className="flex justify-center mt-[-36rem]">
+    //                 <Microphone />
+    //             </div>
+    //             <div>
+
+    //             <Navbar></Navbar>   
+    //             </div>
+    //         </div>
+    //         {/* second page */}
+    //         {/* <div>
+    //         <Raisecomplaint/>
+
+    //         </div> */}
+
+    //         {/* third page  */}
+    //         {/* <div>
+    //         <Feedback/> 
+
+    //         </div> */}
+    //         {/* fourth page  */}
+    //         {/* <div>
+    //             <QuickActions></QuickActions>
+    //         </div> */}
+
+    //         {/* <div>
+    //             <Track></Track>
+    //         </div> */}
+    
+           
+            
+    //         {/* <Track/>
+    //         <QuickActions/> */}
+
+ 
         
 
-    );
+    //     </div>
+        
+
+    // );
+
+    return (
+       
+            <Railmadaheader></Railmadaheader>
+        
+    )
 }
 
